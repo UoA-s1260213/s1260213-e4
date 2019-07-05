@@ -1,10 +1,14 @@
 import java.util.Random;
-
+import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-Random rand = new Random();
+System.out.println("Whst's your name?");
+		Scanner sc1= new Scanner(System.in);
+		String name = sc1.nextLine();
+		System.out.println("Hello, "+name+"!");
+		Random rand = new Random();
 int D1=rand.nextInt(6)+1;
 int D2=rand.nextInt(6)+1;
 int total=D1+D2;
